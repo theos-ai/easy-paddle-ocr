@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ### How does it work?
 
-The text recognition is made on a cropped part of a larger image, usually these crops are made with the bounding box output of an [Object Detection](https://docs.theos.ai/get-started/object-detection) model. You can learn how to build a license plate recogition model on the following [YouTube Tutorial](https://www.youtube.com/watch?v=GVLUVxTpqG0). You can easily train a model to make bounding boxes around any kind of text, not just license plates. After training your own object detection model, you can pass those cropped bounding boxes to Easy Paddle OCR in order to perform text recognition and get the text they contain (license plates, for example).
+The text recognition is made on a cropped part of a larger image, usually these crops are made with the bounding box output of an [Object Detection](https://docs.theos.ai/get-started/object-detection) model. You can learn how to build a license plate recogition model on the following [YouTube Tutorial](https://www.youtube.com/watch?v=GVLUVxTpqG0). You can easily train a model to make bounding boxes around any kind of text, not just license plates. After training your own object detection model, you can pass those cropped bounding boxes to Easy Paddle OCR in order to perform text recognition and read the text they contain.
 
 ### Read the text
 On the **read.py** file we recognize the text of 3 different cropped bounding boxes, each taken from larger images.
