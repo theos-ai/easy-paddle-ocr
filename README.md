@@ -2,7 +2,7 @@
 
 ![Easy Paddle OCR by Theos AI](ocr.jpg)
 
-This a clean and easy-to-use implementation of [Paddle OCR](https://github.com/WongKinYiu/yolov7). Made with ❤️ by [Theos AI](https://theos.ai).
+This a clean and easy-to-use implementation of [Paddle OCR](https://github.com/PaddlePaddle/PaddleOCR). Made with ❤️ by [Theos AI](https://theos.ai).
 
 Don't forget to subscribe to our [YouTube Channel](https://www.youtube.com/@theos-ai/)!
 
