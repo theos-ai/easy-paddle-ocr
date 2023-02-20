@@ -63,7 +63,7 @@ A tutorial on how to do this is coming soon, but if you already signed up and fi
 
 ![Weights](assets/weights.jpeg)
 
-Download the **Last** or **Best** weights and extract the zip file, and finally copy the following files into the weights folder of this repository.
+Download the **Last** or **Best** weights and extract the zip file, finally copy the following files into the weights folder of this repository.
 
 ```
 dictionary.txt
