@@ -19,14 +19,14 @@ The text recognition is made on cropped part of a larger image, usually these cr
 ### Read the text
 On the **read.py** file we recognize the text of 3 different cropped bounding boxes, each taken from larger images.
 
-![broadway.png](broadway.png)
-*broadway.png*
+![broadway.jpeg](broadway.jpeg)
+*broadway.jpeg*
 
-![brooklyn.png](brooklyn.png)
-*brooklyn.png*
+![brooklyn.jpeg](brooklyn.jpeg)
+*brooklyn.jpeg*
 
-![casino.png](casino.png)
-*casino.png*
+![casino.jpeg](casino.jpeg)
+*casino.jpeg*
 
 Let's recognize all of them with the following command.
 
