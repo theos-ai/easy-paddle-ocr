@@ -1,6 +1,6 @@
 # 🤙🏻 Easy Paddle OCR ⚡️
 
-![Easy Paddle OCR by Theos AI](ocr.jpg)
+![Easy Paddle OCR by Theos AI](ocr.jpeg)
 
 This a clean and easy-to-use implementation of [Paddle OCR](https://github.com/WongKinYiu/yolov7). Made with ❤️ by [Theos AI](https://theos.ai).
 
