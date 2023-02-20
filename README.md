@@ -57,7 +57,7 @@ You should now see the following output.
 
 If you find that the default Paddle OCR weights don't work very well for your specific use case, we recommed you to train your own OCR model on [Theos AI](https://theos.ai).
 
-A tutorial on how to do this is coming soon, but if you already signed up and figured out how to build your own dataset on Theos and trained it on Paddle OCR, the only thing you have to do now is download your custom weights from your training session experiment with the button on the top right corner.
+A tutorial on how to do this is coming soon, but if you already signed up and figured out how to build your own dataset on Theos and trained it on Paddle OCR, the only thing you have to do now is download your custom weights from your training session experiment by clicking the weights button on the top right corner.
 
 ![Button](assets/button.jpeg)
 
