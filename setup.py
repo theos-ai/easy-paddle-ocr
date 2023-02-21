@@ -11,7 +11,7 @@ def load_readme():
     with open(os.path.join(folder_path, 'README.md')) as f:
         return f.read()
 
-PACKAGE_VERSION = '0.0.2'
+PACKAGE_VERSION = '0.0.3'
 
 setuptools.setup(
     name = 'easy-paddle-ocr',
