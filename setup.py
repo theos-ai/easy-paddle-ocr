@@ -1,20 +1,12 @@
 import setuptools
 
-def load_requirements(file_list=None):
-    if file_list is None:
-        file_list = ['requirements.txt']
-    if isinstance(file_list,str):
-        file_list = [file_list]
-    requirements = []
-    for file in file_list:
-        with open(file, encoding='utf-8-sig') as f:
-            requirements.extend(f.readlines())
-    return requirements
+def load_requirements():
+    with open('./requirements.txt') as f:
+        return f.read()
 
-def readme():
-    with open('README.md', encoding='utf-8-sig') as f:
-        README = f.read()
-    return README
+def load_readme():
+    with open('./README.md') as f:
+        return f.read()
 
 PACKAGE_VERSION = '0.0.1'
 
@@ -24,14 +16,16 @@ setuptools.setup(
     package_data = {
       'easy_paddle_ocr.algorithm.weights': ['*']
     },
-    version = PACKAGE_VERSION,
+    version=PACKAGE_VERSION,
     license='Other/Proprietary License',
-    description = 'Theos AI',
+    description='This a clean and easy-to-use implementation of Paddle OCR. Made with ❤️ by Theos AI.',
+    long_description=load_readme(),
+    long_description_content_type='text/markdown',
     author = 'Theos AI',
     author_email = 'contact@theos.ai',
     url = 'https://theos.ai',
     keywords = ['theos'],
-    install_requires=load_requirements(['requirements.txt']),
+    install_requires=load_requirements(),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
