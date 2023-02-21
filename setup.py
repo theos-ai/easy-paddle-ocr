@@ -4,11 +4,11 @@ import os
 folder_path = os.path.dirname(os.path.realpath(__file__))
 
 def load_requirements():
-    with open(os.path.join(folder_path,'./requirements.txt')) as f:
+    with open(os.path.join(folder_path,'requirements.txt')) as f:
         return f.read()
 
 def load_readme():
-    with open(os.path.join(folder_path, './README.md')) as f:
+    with open(os.path.join(folder_path, 'README.md')) as f:
         return f.read()
 
 PACKAGE_VERSION = '0.0.1'
