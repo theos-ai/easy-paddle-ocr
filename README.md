@@ -1,6 +1,6 @@
 # 🤙🏻 Easy Paddle OCR ⚡️
 
-![Easy Paddle OCR by Theos AI](assets/cover.jpg)
+![Easy Paddle OCR by Theos AI](https://raw.githubusercontent.com/theos-ai/easy-paddle-ocr/main/assets/cover.jpg)
 
 This a clean and easy-to-use implementation of [Paddle OCR](https://github.com/PaddlePaddle/PaddleOCR). Made with ❤️ by [Theos AI](https://theos.ai).
 
@@ -19,13 +19,13 @@ The text recognition is made on a cropped part of a larger image, usually these 
 ### Read the text
 On the **read.py** file we recognize the text of 3 different cropped bounding boxes, each taken from larger images.
 
-![broadway.jpeg](broadway.jpeg)
+![broadway.jpeg](https://raw.githubusercontent.com/theos-ai/easy-paddle-ocr/main/broadway.jpeg)
 *broadway.jpeg*
 
-![brooklyn.jpeg](brooklyn.jpeg)
+![brooklyn.jpeg](https://raw.githubusercontent.com/theos-ai/easy-paddle-ocr/main/brooklyn.jpeg)
 *brooklyn.jpeg*
 
-![casino.jpeg](casino.jpeg)
+![casino.jpeg](https://raw.githubusercontent.com/theos-ai/easy-paddle-ocr/main/casino.jpeg)
 *casino.jpeg*
 
 Let's recognize all of them with the following script.
@@ -75,9 +75,9 @@ If you find that the default Paddle OCR weights don't work very well for your sp
 
 A tutorial on how to do this is coming soon, but if you already signed up and figured out how to build your own dataset on Theos and trained it on Paddle OCR, the only thing you have to do now is download your custom weights from your training session experiment by clicking the weights button on the top right corner.
 
-![Button](assets/button.jpeg)
+![Button](https://raw.githubusercontent.com/theos-ai/easy-paddle-ocr/main/assets/button.jpeg)
 
-![Weights](assets/weights.jpeg)
+![Weights](https://raw.githubusercontent.com/theos-ai/easy-paddle-ocr/main/assets/weights.jpeg)
 
 Download the **Last** or **Best** weights and extract the zip file. Only the following files are required.
 
