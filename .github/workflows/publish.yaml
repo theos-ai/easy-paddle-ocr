@@ -23,7 +23,7 @@ jobs:
       - name: Build source and wheel distributions
         run: |
           python -m pip install --upgrade pip setuptools wheel twine
-          python -m setup.py bdist_wheel
+          python setup.py bdist_wheel
           twine check --strict dist/*
   
       - uses: pypa/gh-action-pypi-publish@release/v1
