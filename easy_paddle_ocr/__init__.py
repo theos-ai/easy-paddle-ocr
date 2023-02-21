@@ -1,0 +1,1 @@
+from .algorithm.text_recognizer import TextRecognizer

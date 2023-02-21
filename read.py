@@ -1,8 +1,8 @@
-from algorithm.text_recognizer import TextRecognizer
+from easy_paddle_ocr import TextRecognizer
 import time
 import cv2
 
-text_recognizer = TextRecognizer('./weights')
+text_recognizer = TextRecognizer() # for custom weights do TextRecognizer(weights='folder_path')
 images = ['broadway.jpeg', 'brooklyn.jpeg', 'casino.jpeg']
 
 for filename in images:

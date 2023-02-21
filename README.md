@@ -6,10 +6,10 @@ This a clean and easy-to-use implementation of [Paddle OCR](https://github.com/P
 
 Don't forget to subscribe to our [YouTube Channel](https://www.youtube.com/@theos-ai/)!
 
-### Install all the dependencies
+### Install the package
 
 ```
-pip install -r requirements.txt
+pip install easy-paddle-ocr
 ```
 
 ### How does it work?
@@ -28,13 +28,29 @@ On the **read.py** file we recognize the text of 3 different cropped bounding bo
 ![casino.jpeg](casino.jpeg)
 *casino.jpeg*
 
-Let's recognize all of them with the following command.
+Let's recognize all of them with the following script.
 
-```
-python read.py
+``` python
+from easy_paddle_ocr import TextRecognizer
+import time
+import cv2
+
+text_recognizer = TextRecognizer() # for custom weights do TextRecognizer(weights='folder_path')
+images = ['broadway.jpeg', 'brooklyn.jpeg', 'casino.jpeg']
+
+for filename in images:
+  image = cv2.imread(filename)
+  start = time.time()
+  prediction = text_recognizer.read(image)
+  print(f'\n[+] image: {filename}')
+  print(f'[+] text: {prediction["text"]}')
+  print(f'[+] confidence: {int(prediction["confidence"]*100)}%')
+  print(f'[+] inference time: {int((time.time() - start)*1000)} milliseconds')
+
+print()
 ```
 
-You should now see the following output.
+After running the **read.py** script you should see the following output.
 
 ```
 [+] image: broadway.jpeg
@@ -63,13 +79,19 @@ A tutorial on how to do this is coming soon, but if you already signed up and fi
 
 ![Weights](assets/weights.jpeg)
 
-Download the **Last** or **Best** weights and extract the zip file, finally copy the following files into the weights folder of this repository.
+Download the **Last** or **Best** weights and extract the zip file. Only the following files are required.
 
 ```
 dictionary.txt
 inference.pdiparams
 inference.pdiparams.info
 inference.pdmodel
+```
+
+Finally, set the new weights folder path when you instantiate your TextRecognizer.
+
+``` python
+text_recognizer = TextRecognizer(weights='./best')
 ```
 
 ## Contact us
